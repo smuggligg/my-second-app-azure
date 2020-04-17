@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>This is the {{name}} Template</h1>
+            <h1>Please enter your {{memes}} number</h1>
+            <h1>Today is {{date}}</h1>
+            <ol>
+                {{#profiles}}
+                <li>{{name}}, {{city}}, 
+                    {{#profession}}
+                    profession: {{profession}}
+                    {{/profession}}
+                </li>
+                {{/profiles}}
+            </ol>
+
+            <form method="post" action="/join">
+                <input type="text" name="name" placeholder="Name" />
+                <br />
+                <input type="text" name="city" placeholder="City" />
+                <br>
+                <input type="text" name="profession" placeholder="Profession" />
+                <br>
+                <input type="submit" value="Add Profile" />
+            </form>
+        </div>
+
+
+
+    </body>
+</html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+          <h1>LOGIN</h1>
+            <form>
+                <input type="text" name="username" placeholder="Enter Your Username" />
+                <br>
+                <input type="password" name="password" placeholder="Enter Your Password" />
+                <br>
+                <input type="submit" value="Log In" />
+            </form>
+        </div>
+    </body>
+</html>
