@@ -1,7 +1,5 @@
 const express = require("express");
 const router = express.Router();
-	
-let moment = require('moment');
 
 let user = null;
 
