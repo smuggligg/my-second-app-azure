@@ -5,6 +5,7 @@
     </head>
     <body>
         <div class="container">
+            <h1 style="color: blue">{{connectionString}}</h1>
             <h1>This is the {{name}} Template</h1>
             <h1>Please enter your {{memes}} number</h1>
             <h1>Today is {{date}}</h1>

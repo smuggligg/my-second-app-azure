@@ -3,6 +3,8 @@ const router = express.Router();
 
 let user = null;
 
+let connectionString = process.env.CONN_STRING
+
 const profiles = [
   { name: "Mike", city: "Vancouver", profession: "Rapper" },
   { name: "Cindy", city: "Burnaby" },
@@ -13,6 +15,7 @@ router.get("/", (req, res, next) => {
   //res.send('This is the index route!');
   console.log("Timestamp: " + req.timestamp);
   const data = {
+    connectionString: connectionString,
     name: "Carl Weathers",
     memes: "profession statement",
     date: req.timestamp,
