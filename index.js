@@ -18,6 +18,8 @@ app.use("/", routes);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hjs");
 
-app.listen(80);
-console.log("Server is Running on localhost 80");
+let port = process.env.PORT || 5000;
+
+app.listen(port);
+console.log(`Server is Running on localhost ${port}`);
 console.log(process.env.DB_HOST);
